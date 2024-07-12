@@ -1,0 +1,108 @@
+body {
+    background-color: #000000;
+    min-height: 100vh; 
+    margin: 0;
+
+}
+
+#navbar {
+    width: 100%;
+    max-width: 1110px;
+    height: 70px;
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; 
+    border-radius: 8px;
+    padding: 0 20px; 
+}
+
+.items1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #1b1b1b;
+}
+
+.menu, .social {
+    list-style: none;
+    display: flex;
+    background-color: #1b1b1b;
+}
+
+.menu li, .social li {
+    margin: 0 10px; 
+}
+
+.menu a, .social a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #1b1b1b;
+    color: #fff;
+}
+
+.menu a:hover, .social a:hover {
+    background-color: #555;
+}
+
+#introduction {
+    display: grid;  
+    grid-template-columns: 1fr 1fr;  
+    gap: 20px;  
+    max-width: 1110px;  
+    margin: 70px auto 0 auto;  
+    padding: 0 20px;  
+}
+
+#education {
+    max-width: 1110px;  
+    margin: 70px auto 0 auto;  
+    padding: 0 20px;  
+}
+
+
+/* Custom class for resizing carousel images */
+.custom-carousel-img {
+    max-width: 80%; /* Adjust this value to resize the image */
+    max-height: 500px; /* Adjust this value to set a max height */
+    margin: 0 auto; /* Center the image horizontally */
+}
+#experience {
+    max-width: 1110px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-separator {
+    border: 1px solid #444;
+}
+#particles-js {
+    position: absolute;
+    width: 1140px;
+    height: 100%;
+    background-color: #000000;
+    background-size: cover;
+    z-index: -1;
+}
+
+.image {
+    margin-left: 50px;
+    overflow: hidden; /* Ensure the image does not overflow its container */
+}
+
+.image img {
+    width: 350px;
+    height: 350px;
+    transition: transform 0.5s ease; /* Smooth transition for the zoom effect */
+    
+}
+
+.image img:hover {
+    transform: scale(1.1); /* Zoom effect */
+}
